@@ -1,0 +1,36 @@
+@model PredictorActivos.Web.ViewModels.ModeViewModel
+@using PredictorActivos.Business.DTOs
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using System.ComponentModel.DataAnnotations
+@using System.Reflection
+
+@functions{
+    IEnumerable<SelectListItem> EnumToSelectList<TEnum>(TEnum selected) where TEnum : Enum
+    {
+        foreach (var value in Enum.GetValues(typeof(TEnum)).Cast<TEnum>())
+        {
+            var member = typeof(TEnum).GetMember(value.ToString()!).First();
+            var display = member.GetCustomAttribute<DisplayAttribute>()?.Name ?? value.ToString();
+            yield return new SelectListItem(display, value.ToString(), value.Equals(selected));
+        }
+    }
+}
+
+<div class="container py-4">
+    <h2 class="mb-3">Modos de predicción</h2>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-success">@TempData["msg"]</div>
+    }
+
+    <form asp-action="Index" method="post" class="card p-3 shadow-sm">
+        <label class="form-label">Selecciona un modo:</label>
+
+        <select asp-for="SelectedMode" class="form-select"
+                asp-items="EnumToSelectList(Model.SelectedMode)">
+        </select>
+
+        <button type="submit" class="btn btn-primary mt-3">Guardar modo</button>
+    </form>
+</div> 

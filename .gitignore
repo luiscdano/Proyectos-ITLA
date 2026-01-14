@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Build results
+bin/
+obj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+project.assets.json
+project.nuget.cache
+
+# ASP.NET
+appsettings.Production.json
+
+# Frontend vendor libs (LibMan)
+PredictorActivos/**/wwwroot/lib/

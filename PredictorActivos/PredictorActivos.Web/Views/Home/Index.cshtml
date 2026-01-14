@@ -1,0 +1,74 @@
+﻿@model PredictorActivos.Web.ViewModels.HomeInputViewModel
+
+<div class="container py-4">
+    <h2 class="mb-2">Predictor de Tendencia de Activos</h2>
+    <p class="text-muted">Modo actual: <strong>@Model.CurrentModeName</strong></p>
+
+    <form asp-action="Index" method="post" class="card p-3 shadow-sm">
+        <label class="form-label">Datos históricos (20 filas exactas)</label>
+        <textarea asp-for="RawSeries" class="form-control" rows="10"></textarea>
+        <span asp-validation-for="RawSeries" class="text-danger"></span>
+
+        <button type="submit" class="btn btn-primary mt-3">Calcular predicción</button>
+    </form>
+
+    @if (!string.IsNullOrWhiteSpace(Model.ResultSummary))
+    {
+        <div class="alert alert-info mt-4">
+            <h5 class="mb-2">Resultado</h5>
+            <p class="mb-2">@Model.ResultSummary</p>
+
+            @if (Model.Metrics != null && Model.Metrics.Any())
+            {
+                <ul class="mb-0">
+                    @foreach (var kv in Model.Metrics)
+                    {
+                        <li><strong>@kv.Key</strong>: @kv.Value</li>
+                    }
+                </ul>
+            }
+        </div>
+    }
+
+    @* TABLA ROC COMPLETA (solo aparece cuando el modo sea Momentum ROC) *@
+    @if (Model.Rows != null && Model.Rows.Any())
+    {
+        <div class="card mt-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="mb-3">Detalle Momentum (ROC)</h5>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-sm align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>t</th>
+                                <th>Fecha</th>
+                                <th>Precio</th>
+                                <th>ROC (5)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model.Rows)
+                            {
+                                <tr>
+                                    <td>@row["t"]</td>
+                                    <td>@row["Fecha"]</td>
+                                    <td>@row["Precio"]</td>
+                                    <td>@row["ROC(5)"]</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-muted small mb-0">
+                    El cálculo del ROC utiliza un período fijo n = 5, según lo indicado en el documento funcional.
+                </p>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
