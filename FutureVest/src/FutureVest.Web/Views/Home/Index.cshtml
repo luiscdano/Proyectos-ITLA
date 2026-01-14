@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "FutureVest - Dashboard";
+}
+
+<div class="container py-4">
+    <div class="p-4 p-md-5 mb-4 rounded-3 border bg-light">
+        <h1 class="display-6 fw-bold">FutureVest</h1>
+        <p class="lead mb-3">
+            Predictor de tendencia de activos basado en indicadores macroeconómicos por país.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" asp-controller="Countries" asp-action="Index">Gestionar Países</a>
+            <a class="btn btn-outline-primary" asp-controller="MacroIndicators" asp-action="Index">Indicadores Macro</a>
+            <a class="btn btn-outline-secondary" asp-controller="CountryIndicators" asp-action="Index">Country Indicators</a>
+        </div>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Objetivo</h5>
+                    <p class="card-text">
+                        Organizar data macro por país y año para habilitar un Score y un Dashboard comparativo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Estructura</h5>
+                    <p class="card-text">
+                        Países → Indicadores Macro → Valores por país/año (con soporte para Missing).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Próximo paso</h5>
+                    <p class="card-text">
+                        Dashboard (cards + tabla resumen) y Score inicial (ponderado).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

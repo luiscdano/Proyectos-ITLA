@@ -1,0 +1,82 @@
+@model IEnumerable<FutureVest.Data.Entities.CountryIndicator>
+
+@{
+    ViewData["Title"] = "Country Indicators";
+}
+
+<h1>Country Indicators</h1>
+
+<div class="d-flex gap-2 mb-3">
+    <a class="btn btn-primary" asp-action="Create">Create New</a>
+</div>
+
+<form method="get" class="card p-3 mb-3">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <label class="form-label">Country</label>
+            <select class="form-select" name="countryId" asp-items="ViewBag.Countries">
+                <option value="">-- All --</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Macro Indicator</label>
+            <select class="form-select" name="macroIndicatorId" asp-items="ViewBag.MacroIndicators">
+                <option value="">-- All --</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Year</label>
+            <select class="form-select" name="year" asp-items="ViewBag.Years">
+                <option value="">-- All --</option>
+            </select>
+        </div>
+        <div class="col-md-2 d-flex align-items-end gap-2">
+            <button class="btn btn-outline-primary w-100" type="submit">Filter</button>
+            <a class="btn btn-outline-secondary w-100" asp-action="Index">Reset</a>
+        </div>
+    </div>
+</form>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        No country indicators found. Click <strong>Create New</strong> to add the first one.
+    </div>
+}
+else
+{
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Macro Indicator</th>
+                <th>Year</th>
+                <th class="text-end">Value</th>
+                <th>Missing</th>
+                <th style="width:220px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Country?.Name</td>
+                <td>
+                    @item.MacroIndicator?.Name
+                    <span class="text-muted">(@item.MacroIndicator?.Code)</span>
+                </td>
+                <td>@item.Year</td>
+                <td class="text-end">
+                    @(item.Value.HasValue ? item.Value.Value.ToString("0.####") : "-")
+                </td>
+                <td>@(item.Missing ? "Yes" : "No")</td>
+                <td class="text-end">
+                    <a class="btn btn-sm btn-secondary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

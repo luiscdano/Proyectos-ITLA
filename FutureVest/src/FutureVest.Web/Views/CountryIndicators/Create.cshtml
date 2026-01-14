@@ -1,0 +1,58 @@
+@model FutureVest.Data.Entities.CountryIndicator
+
+@{
+    ViewData["Title"] = "Create Country Indicator";
+}
+
+<h1>Create</h1>
+<h4>Country Indicator</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="All" class="text-danger mb-2"></div>
+
+            <div class="mb-3">
+                <label class="form-label">Country</label>
+                <select class="form-select" asp-for="CountryId" asp-items="ViewBag.Countries">
+                    <option value="">-- Select --</option>
+                </select>
+                <span asp-validation-for="CountryId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Macro Indicator</label>
+                <select class="form-select" asp-for="MacroIndicatorId" asp-items="ViewBag.MacroIndicators">
+                    <option value="">-- Select --</option>
+                </select>
+                <span asp-validation-for="MacroIndicatorId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Year</label>
+                <select class="form-select" asp-for="Year" asp-items="ViewBag.Years"></select>
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Value" class="form-label"></label>
+                <input asp-for="Value" class="form-control" />
+                <div class="form-text">Puedes dejarlo vacío si el valor está missing.</div>
+                <span asp-validation-for="Value" class="text-danger"></span>
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" asp-for="Missing" />
+                <label class="form-check-label" asp-for="Missing"></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create</button>
+            <a asp-action="Index" class="btn btn-secondary">Back</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

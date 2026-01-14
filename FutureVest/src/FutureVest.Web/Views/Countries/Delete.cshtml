@@ -1,0 +1,17 @@
+@model FutureVest.Data.Entities.Country
+
+@{
+    ViewData["Title"] = "Delete Country";
+}
+
+<h2>Delete</h2>
+
+<div class="alert alert-warning">
+    Are you sure you want to delete <strong>@Model.Name (@Model.Iso3)</strong>?
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button class="btn btn-danger" type="submit">Yes, delete</button>
+    <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+</form>

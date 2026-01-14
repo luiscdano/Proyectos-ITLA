@@ -1,34 +1,70 @@
-# macOS
+############################
+# OS / Editor
+############################
 .DS_Store
+Thumbs.db
 
-# Build results
-bin/
-obj/
-
-# Visual Studio / VS Code
 .vs/
 .vscode/
+.idea/
 
-# User-specific files
-*.user
-*.suo
+############################
+# .NET / Visual Studio
+############################
+**/bin/
+**/obj/
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
 
-# Logs
-*.log
-
+############################
 # NuGet
-*.nupkg
-project.assets.json
-project.nuget.cache
+############################
+**/*.nupkg
+**/packages/
+**/project.assets.json
+**/project.nuget.cache
 
-# ASP.NET
-appsettings.Production.json
+############################
+# Logs
+############################
+**/*.log
 
+############################
+# ASP.NET / Config
+############################
+**/appsettings.Production.json
+**/appsettings.*.Production.json
+
+############################
+# SQLite (si decides no versionar DB)
+# Si quieres versionar la DB para demo, comenta estas 2 líneas.
+############################
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+############################
 # Python
-__pycache__/
-*.pyc
-.venv/
-.env
+############################
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.venv/
+**/venv/
+**/.env
+**/.python-version
 
-# Frontend vendor libs (LibMan)
-PredictorActivos/**/wwwroot/lib/
+############################
+# Node / Frontend (por si algún proyecto lo usa)
+############################
+**/node_modules/
+**/dist/
+**/build/
+
+############################
+# LibMan / vendor libs (NO subir)
+############################
+**/wwwroot/lib/

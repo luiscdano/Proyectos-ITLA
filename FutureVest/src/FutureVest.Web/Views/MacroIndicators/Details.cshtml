@@ -1,0 +1,33 @@
+@model FutureVest.Data.Entities.MacroIndicator
+
+@{
+    ViewData["Title"] = "Macro Indicator Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Macro Indicator</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">@Model.Name</dd>
+
+        <dt class="col-sm-3">Code</dt>
+        <dd class="col-sm-9">@Model.Code</dd>
+
+        <dt class="col-sm-3">Weight</dt>
+        <dd class="col-sm-9">@Model.Weight</dd>
+
+        <dt class="col-sm-3">Higher Is Better</dt>
+        <dd class="col-sm-9">@(Model.HigherIsBetter ? "Yes" : "No")</dd>
+
+        <dt class="col-sm-3">Unit</dt>
+        <dd class="col-sm-9">@Model.Unit</dd>
+    </dl>
+</div>
+
+<div>
+    <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+    <a class="btn btn-outline-secondary" asp-action="Index">Back</a>
+</div>

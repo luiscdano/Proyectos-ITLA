@@ -1,0 +1,98 @@
+@model FutureVest.Web.ViewModels.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-4">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+            <h1 class="mb-0">Dashboard</h1>
+            <small class="text-muted">Snapshot del sistema (año más reciente: @Model.LatestYear)</small>
+        </div>
+        <div>
+            <a class="btn btn-outline-primary" asp-controller="Countries" asp-action="Index">Countries</a>
+            <a class="btn btn-outline-primary" asp-controller="MacroIndicators" asp-action="Index">Macro Indicators</a>
+            <a class="btn btn-outline-primary" asp-controller="CountryIndicators" asp-action="Index">Country Indicators</a>
+        </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted">Countries</div>
+                    <div class="fs-2 fw-bold">@Model.CountriesCount</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted">Macro Indicators</div>
+                    <div class="fs-2 fw-bold">@Model.MacroIndicatorsCount</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted">Country Indicators</div>
+                    <div class="fs-2 fw-bold">@Model.CountryIndicatorsCount</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted">% Missing</div>
+                    <div class="fs-2 fw-bold">@Model.MissingPercent%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="mb-2">Top 10 países por Score (ponderado)</h3>
+    <p class="text-muted">
+        Score simple: normalización min-max por indicador (0..1) y suma ponderada por Weight. Se muestra en escala 0..100.
+    </p>
+
+    @if (Model.TopCountries == null || !Model.TopCountries.Any())
+    {
+        <div class="alert alert-info">Aún no hay datos suficientes para calcular el ranking.</div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Country</th>
+                        <th>ISO3</th>
+                        <th>Year</th>
+                        <th class="text-end">Score</th>
+                        <th class="text-end">Indicators Used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        var i = 1;
+                        foreach (var row in Model.TopCountries)
+                        {
+                            <tr>
+                                <td>@i</td>
+                                <td>@row.Country</td>
+                                <td>@row.Iso3</td>
+                                <td>@row.Year</td>
+                                <td class="text-end">@row.Score</td>
+                                <td class="text-end">@row.IndicatorsUsed</td>
+                            </tr>
+                            i++;
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

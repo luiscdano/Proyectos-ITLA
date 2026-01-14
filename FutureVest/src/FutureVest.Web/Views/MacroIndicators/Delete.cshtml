@@ -1,0 +1,33 @@
+@model FutureVest.Data.Entities.MacroIndicator
+
+@{
+    ViewData["Title"] = "Delete Macro Indicator";
+}
+
+<h1>Delete</h1>
+
+<h4>Are you sure you want to delete this?</h4>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-3">Name</dt>
+    <dd class="col-sm-9">@Model.Name</dd>
+
+    <dt class="col-sm-3">Code</dt>
+    <dd class="col-sm-9">@Model.Code</dd>
+
+    <dt class="col-sm-3">Weight</dt>
+    <dd class="col-sm-9">@Model.Weight</dd>
+
+    <dt class="col-sm-3">Higher Is Better</dt>
+    <dd class="col-sm-9">@(Model.HigherIsBetter ? "Yes" : "No")</dd>
+
+    <dt class="col-sm-3">Unit</dt>
+    <dd class="col-sm-9">@Model.Unit</dd>
+</dl>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+</form>
