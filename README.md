@@ -57,6 +57,14 @@ Estructura esperada por proyecto:
 - **LinkUp** – Red social académica
 - **eVote360** – Plataforma de votación electrónica
 
+## Proyectos incluidos
+
+| Proyecto | Descripción | Tecnologías | Ejecutar |
+|---------|-------------|-------------|----------|
+| **PredictorActivos** | Predicción de tendencia de activos (acciones/criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC). | C#, ASP.NET Core MVC (.NET 8), Bootstrap | `dotnet run --project PredictorActivos.Web` |
+
+Abrir: **[PredictorActivos](./PredictorActivos)**
+
 > ⚠️ Algunos proyectos se encuentran en desarrollo o evolución progresiva, lo cual refleja el proceso natural de aprendizaje y mejora continua.
 
 ---
