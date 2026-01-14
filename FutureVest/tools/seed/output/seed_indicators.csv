@@ -1,0 +1,253 @@
+country_iso3,country_name,year,indicator_key,indicator_code,indicator_name,value,source,missing
+USA,United States,2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-2.163029,WorldBank,0
+USA,United States,2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),6.055053,WorldBank,0
+USA,United States,2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.512375,WorldBank,0
+USA,United States,2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.887556,WorldBank,0
+USA,United States,2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.793001,WorldBank,0
+USA,United States,2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+USA,United States,2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+USA,United States,2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",1.233584,WorldBank,0
+USA,United States,2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",4.697859,WorldBank,0
+USA,United States,2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",8.002800,WorldBank,0
+USA,United States,2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",4.116338,WorldBank,0
+USA,United States,2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2.949525,WorldBank,0
+USA,United States,2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+USA,United States,2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+USA,United States,2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",8.055000,WorldBank,0
+USA,United States,2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",5.349000,WorldBank,0
+USA,United States,2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.650000,WorldBank,0
+USA,United States,2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.638000,WorldBank,0
+USA,United States,2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.106000,WorldBank,0
+USA,United States,2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+USA,United States,2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+USA,United States,2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),2.846148,WorldBank,0
+USA,United States,2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),-1.087168,WorldBank,0
+USA,United States,2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+USA,United States,2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+USA,United States,2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+USA,United States,2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+USA,United States,2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+SGP,Singapore,2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-3.814709,WorldBank,0
+SGP,Singapore,2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),9.756804,WorldBank,0
+SGP,Singapore,2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.108000,WorldBank,0
+SGP,Singapore,2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.821407,WorldBank,0
+SGP,Singapore,2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.388024,WorldBank,0
+SGP,Singapore,2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+SGP,Singapore,2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+SGP,Singapore,2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",-0.172112,WorldBank,0
+SGP,Singapore,2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2.316103,WorldBank,0
+SGP,Singapore,2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",6.130954,WorldBank,0
+SGP,Singapore,2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",4.833724,WorldBank,0
+SGP,Singapore,2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2.389511,WorldBank,0
+SGP,Singapore,2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+SGP,Singapore,2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+SGP,Singapore,2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.100000,WorldBank,0
+SGP,Singapore,2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.640000,WorldBank,0
+SGP,Singapore,2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.591000,WorldBank,0
+SGP,Singapore,2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.444000,WorldBank,0
+SGP,Singapore,2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.182000,WorldBank,0
+SGP,Singapore,2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+SGP,Singapore,2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+SGP,Singapore,2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),7.830273,WorldBank,0
+SGP,Singapore,2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),-5.119737,WorldBank,0
+SGP,Singapore,2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+SGP,Singapore,2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+SGP,Singapore,2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+SGP,Singapore,2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+SGP,Singapore,2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+ARE,United Arab Emirates,2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-8.693426,WorldBank,0
+ARE,United Arab Emirates,2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.552786,WorldBank,0
+ARE,United Arab Emirates,2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),7.514484,WorldBank,0
+ARE,United Arab Emirates,2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.301182,WorldBank,0
+ARE,United Arab Emirates,2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.991807,WorldBank,0
+ARE,United Arab Emirates,2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+ARE,United Arab Emirates,2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+ARE,United Arab Emirates,2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",-2.079403,WorldBank,0
+ARE,United Arab Emirates,2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",0.179935,WorldBank,0
+ARE,United Arab Emirates,2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",5.291226,WorldBank,0
+ARE,United Arab Emirates,2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",1.626708,WorldBank,0
+ARE,United Arab Emirates,2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",1.663365,WorldBank,0
+ARE,United Arab Emirates,2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+ARE,United Arab Emirates,2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+ARE,United Arab Emirates,2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.294000,WorldBank,0
+ARE,United Arab Emirates,2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.105000,WorldBank,0
+ARE,United Arab Emirates,2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.872000,WorldBank,0
+ARE,United Arab Emirates,2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.151000,WorldBank,0
+ARE,United Arab Emirates,2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.133000,WorldBank,0
+ARE,United Arab Emirates,2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+ARE,United Arab Emirates,2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+ARE,United Arab Emirates,2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+ARE,United Arab Emirates,2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+ARE,United Arab Emirates,2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+ARE,United Arab Emirates,2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+ARE,United Arab Emirates,2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+ARE,United Arab Emirates,2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+ARE,United Arab Emirates,2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+IRL,Ireland,2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),7.153695,WorldBank,0
+IRL,Ireland,2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),16.258188,WorldBank,0
+IRL,Ireland,2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),7.511139,WorldBank,0
+IRL,Ireland,2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-2.536374,WorldBank,0
+IRL,Ireland,2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.599467,WorldBank,0
+IRL,Ireland,2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+IRL,Ireland,2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+IRL,Ireland,2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",-0.326184,WorldBank,0
+IRL,Ireland,2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2.340341,WorldBank,0
+IRL,Ireland,2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",7.829457,WorldBank,0
+IRL,Ireland,2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",6.299425,WorldBank,0
+IRL,Ireland,2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2.113450,WorldBank,0
+IRL,Ireland,2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+IRL,Ireland,2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+IRL,Ireland,2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",5.623000,WorldBank,0
+IRL,Ireland,2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",6.364000,WorldBank,0
+IRL,Ireland,2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.501000,WorldBank,0
+IRL,Ireland,2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.288000,WorldBank,0
+IRL,Ireland,2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.369000,WorldBank,0
+IRL,Ireland,2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+IRL,Ireland,2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+IRL,Ireland,2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+IRL,Ireland,2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+IRL,Ireland,2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+IRL,Ireland,2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+IRL,Ireland,2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+IRL,Ireland,2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+IRL,Ireland,2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+MEX,Mexico,2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-8.354035,WorldBank,0
+MEX,Mexico,2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),6.048483,WorldBank,0
+MEX,Mexico,2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.709757,WorldBank,0
+MEX,Mexico,2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.353541,WorldBank,0
+MEX,Mexico,2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.427428,WorldBank,0
+MEX,Mexico,2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+MEX,Mexico,2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+MEX,Mexico,2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",3.396834,WorldBank,0
+MEX,Mexico,2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",5.689208,WorldBank,0
+MEX,Mexico,2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",7.896276,WorldBank,0
+MEX,Mexico,2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",5.527961,WorldBank,0
+MEX,Mexico,2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",4.722256,WorldBank,0
+MEX,Mexico,2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+MEX,Mexico,2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+MEX,Mexico,2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.440000,WorldBank,0
+MEX,Mexico,2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",4.019000,WorldBank,0
+MEX,Mexico,2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.256000,WorldBank,0
+MEX,Mexico,2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.765000,WorldBank,0
+MEX,Mexico,2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.711000,WorldBank,0
+MEX,Mexico,2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+MEX,Mexico,2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+MEX,Mexico,2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),1.645842,WorldBank,0
+MEX,Mexico,2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),0.386354,WorldBank,0
+MEX,Mexico,2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),1.417985,WorldBank,0
+MEX,Mexico,2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),6.629295,WorldBank,0
+MEX,Mexico,2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),6.022835,WorldBank,0
+MEX,Mexico,2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+MEX,Mexico,2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+KOR,"Korea, Rep.",2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-0.700242,WorldBank,0
+KOR,"Korea, Rep.",2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.612968,WorldBank,0
+KOR,"Korea, Rep.",2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.727565,WorldBank,0
+KOR,"Korea, Rep.",2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.583015,WorldBank,0
+KOR,"Korea, Rep.",2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.003611,WorldBank,0
+KOR,"Korea, Rep.",2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+KOR,"Korea, Rep.",2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+KOR,"Korea, Rep.",2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",0.537288,WorldBank,0
+KOR,"Korea, Rep.",2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2.498333,WorldBank,0
+KOR,"Korea, Rep.",2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",5.089514,WorldBank,0
+KOR,"Korea, Rep.",2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",3.597456,WorldBank,0
+KOR,"Korea, Rep.",2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2.321743,WorldBank,0
+KOR,"Korea, Rep.",2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+KOR,"Korea, Rep.",2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+KOR,"Korea, Rep.",2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.931000,WorldBank,0
+KOR,"Korea, Rep.",2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",3.639000,WorldBank,0
+KOR,"Korea, Rep.",2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.857000,WorldBank,0
+KOR,"Korea, Rep.",2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.675000,WorldBank,0
+KOR,"Korea, Rep.",2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.604000,WorldBank,0
+KOR,"Korea, Rep.",2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+KOR,"Korea, Rep.",2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+KOR,"Korea, Rep.",2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),1.195502,WorldBank,0
+KOR,"Korea, Rep.",2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),-0.287216,WorldBank,0
+KOR,"Korea, Rep.",2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),2.440529,WorldBank,0
+KOR,"Korea, Rep.",2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),3.087726,WorldBank,0
+KOR,"Korea, Rep.",2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),0.634469,WorldBank,0
+KOR,"Korea, Rep.",2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+KOR,"Korea, Rep.",2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+DOM,Dominican Republic,2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-7.929052,WorldBank,0
+DOM,Dominican Republic,2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),14.012429,WorldBank,0
+DOM,Dominican Republic,2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.237957,WorldBank,0
+DOM,Dominican Republic,2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.192298,WorldBank,0
+DOM,Dominican Republic,2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.953522,WorldBank,0
+DOM,Dominican Republic,2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+DOM,Dominican Republic,2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+DOM,Dominican Republic,2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",3.781032,WorldBank,0
+DOM,Dominican Republic,2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",8.243003,WorldBank,0
+DOM,Dominican Republic,2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",8.811092,WorldBank,0
+DOM,Dominican Republic,2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",4.785613,WorldBank,0
+DOM,Dominican Republic,2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",3.302233,WorldBank,0
+DOM,Dominican Republic,2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+DOM,Dominican Republic,2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+DOM,Dominican Republic,2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",6.126000,WorldBank,0
+DOM,Dominican Republic,2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",7.702000,WorldBank,0
+DOM,Dominican Republic,2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",5.504000,WorldBank,0
+DOM,Dominican Republic,2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",5.555000,WorldBank,0
+DOM,Dominican Republic,2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",5.473000,WorldBank,0
+DOM,Dominican Republic,2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+DOM,Dominican Republic,2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+DOM,Dominican Republic,2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),5.239188,WorldBank,0
+DOM,Dominican Republic,2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),2.226499,WorldBank,0
+DOM,Dominican Republic,2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),2.098393,WorldBank,0
+DOM,Dominican Republic,2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),8.174303,WorldBank,0
+DOM,Dominican Republic,2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),10.531551,WorldBank,0
+DOM,Dominican Republic,2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+DOM,Dominican Republic,2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+CUB,Cuba,2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-10.949436,WorldBank,0
+CUB,Cuba,2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.254487,WorldBank,0
+CUB,Cuba,2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.774652,WorldBank,0
+CUB,Cuba,2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-1.929371,WorldBank,0
+CUB,Cuba,2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-1.061733,WorldBank,0
+CUB,Cuba,2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+CUB,Cuba,2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+CUB,Cuba,2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+CUB,Cuba,2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+CUB,Cuba,2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+CUB,Cuba,2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+CUB,Cuba,2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+CUB,Cuba,2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+CUB,Cuba,2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+CUB,Cuba,2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.240000,WorldBank,0
+CUB,Cuba,2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",2.116000,WorldBank,0
+CUB,Cuba,2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",1.820000,WorldBank,0
+CUB,Cuba,2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",1.719000,WorldBank,0
+CUB,Cuba,2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",1.530000,WorldBank,0
+CUB,Cuba,2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+CUB,Cuba,2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+CUB,Cuba,2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+CUB,Cuba,2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+CUB,Cuba,2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+CUB,Cuba,2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+CUB,Cuba,2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+CUB,Cuba,2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+CUB,Cuba,2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+VEN,"Venezuela, RB",2020,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-29.998570,WorldBank,0
+VEN,"Venezuela, RB",2021,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.955433,WorldBank,0
+VEN,"Venezuela, RB",2022,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),8.000913,WorldBank,0
+VEN,"Venezuela, RB",2023,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.001686,WorldBank,0
+VEN,"Venezuela, RB",2024,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.300000,WorldBank,0
+VEN,"Venezuela, RB",2025,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+VEN,"Venezuela, RB",2026,GDP_GROWTH_PCT,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),,WorldBank,1
+VEN,"Venezuela, RB",2020,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+VEN,"Venezuela, RB",2021,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+VEN,"Venezuela, RB",2022,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+VEN,"Venezuela, RB",2023,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+VEN,"Venezuela, RB",2024,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+VEN,"Venezuela, RB",2025,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+VEN,"Venezuela, RB",2026,INFLATION_PCT,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",,WorldBank,1
+VEN,"Venezuela, RB",2020,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",7.530000,WorldBank,0
+VEN,"Venezuela, RB",2021,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",7.037000,WorldBank,0
+VEN,"Venezuela, RB",2022,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",5.707000,WorldBank,0
+VEN,"Venezuela, RB",2023,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",5.485000,WorldBank,0
+VEN,"Venezuela, RB",2024,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",5.475000,WorldBank,0
+VEN,"Venezuela, RB",2025,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+VEN,"Venezuela, RB",2026,UNEMPLOYMENT_PCT,SL.UEM.TOTL.ZS,"Unemployment, total (% of labor force)",,WorldBank,1
+VEN,"Venezuela, RB",2020,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+VEN,"Venezuela, RB",2021,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+VEN,"Venezuela, RB",2022,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+VEN,"Venezuela, RB",2023,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+VEN,"Venezuela, RB",2024,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+VEN,"Venezuela, RB",2025,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1
+VEN,"Venezuela, RB",2026,REAL_INTEREST_PCT,FR.INR.RINR,Real interest rate (%),,WorldBank,1

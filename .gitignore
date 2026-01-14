@@ -24,5 +24,11 @@ project.nuget.cache
 # ASP.NET
 appsettings.Production.json
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
 # Frontend vendor libs (LibMan)
 PredictorActivos/**/wwwroot/lib/
