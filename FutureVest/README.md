@@ -170,7 +170,7 @@ facilitar pruebas y simulaciones con información macroeconómica realista.
 
 ## Posibles mejoras futuras
 
-- Consumo de APIs reales (Banco Mundial, FMI).
+- Consumo de APIs reales (Banco Mundial, FMI)
 - Visualización gráfica de rankings y comparaciones.
 - Exportación de resultados (CSV / PDF).
 - Autenticación de usuarios y perfiles.
