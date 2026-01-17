@@ -195,12 +195,15 @@ Proyectos incluidos (en crecimiento)
 
 Proyectos incluidos
 
-Proyecto	Descripción	Tecnologías	Ejecutar
-PredictorActivos￼	Predicción de tendencia de activos (acciones y criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC).	C#, ASP.NET Core MVC (.NET 8), Bootstrap	dotnet run --project PredictorActivos.Web
-FutureVest￼	Análisis, ranking y simulación de inversión por países basado en indicadores macroeconómicos y scoring ponderado.	C#, ASP.NET Core MVC (.NET 8), EF Core, Bootstrap	dotnet run --project FutureVest.Web
-eVote360￼	Plataforma de votación electrónica con gestión de elecciones, partidos, candidaturas y registro de votos, con autenticación y control por roles (Admin).	C#, ASP.NET Core MVC (.NET 8), EF Core, Identity, SQLite, Bootstrap	dotnet run --project eVote360.Web
+## Proyectos incluidos
 
-⚠️ Algunos proyectos se encuentran en desarrollo o en evolución progresiva, lo cual refleja el proceso natural de aprendizaje y mejora continua.
+| Proyecto | Descripción | Tecnologías | Ejecutar |
+|----------|-------------|-------------|----------|
+| **[PredictorActivos](./PredictorActivos)** | Predicción de tendencia de activos (acciones/criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC). | C#, ASP.NET Core MVC (.NET 8), Bootstrap | `dotnet run --project PredictorActivos.Web` |
+| **[FutureVest](./FutureVest)** | Análisis, ranking y simulación de inversión por países basado en indicadores macroeconómicos y scoring ponderado. | C#, ASP.NET Core MVC (.NET 8), EF Core, Bootstrap | `dotnet run --project FutureVest.Web` |
+| **[eVote360](./eVote360)** | Plataforma de votación electrónica con gestión de elecciones, partidos, candidaturas y registro de votos, incluyendo autenticación y control por roles (Admin). | C#, ASP.NET Core MVC (.NET 8), EF Core, Identity, SQLite, Bootstrap | `dotnet run --project eVote360.Web` |
+
+> ⚠️ Algunos proyectos se encuentran en desarrollo o en evolución progresiva, lo cual refleja el proceso natural de aprendizaje y mejora continua.
 
 ⸻
 
