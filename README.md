@@ -1,3 +1,5 @@
+# Proyectos-ITLA
+
 Repositorio central de **proyectos académicos y prácticos** desarrollados durante la carrera de **Desarrollo de Software** en el  
 **Instituto Tecnológico de las Américas (ITLA)**.
 
@@ -48,6 +50,49 @@ Estructura esperada por proyecto:
 
 ---
 
+# Arquitectura global del monorepo
+
+## Visión general
+
+Este repositorio sigue un enfoque de **monorepo académico-profesional**, donde cada proyecto es **independiente en ejecución**, pero todos comparten una **filosofía común de diseño, arquitectura y calidad técnica**.
+
+El objetivo no es solo mostrar soluciones funcionales, sino demostrar:
+
+- Criterio estructural  
+- Separación de responsabilidades  
+- Escalabilidad conceptual  
+- Estilo de trabajo alineado con entornos reales de desarrollo de software  
+
+---
+
+## Principios de diseño aplicados
+
+### 1) Separación por capas
+
+Los sistemas se organizan evitando la dependencia directa entre:
+
+- **Presentación (UI / Web / Consola)**  
+- **Lógica de negocio / Application**  
+- **Acceso a datos / Infrastructure**  
+- **Dominio del problema / Domain**  
+
+Esto permite:
+- Cambiar la interfaz sin afectar la lógica  
+- Sustituir la base de datos sin reescribir reglas de negocio  
+- Testear componentes de forma aislada  
+
+---
+
+### 2) Dominio como núcleo del sistema
+
+El modelo de dominio representa el **lenguaje del problema**, no solo estructuras de base de datos.
+
+Ejemplos reales del repositorio:
+- `Candidatura`, `Eleccion`, `Voto` en **eVote360**  
+- `Pais`, `MacroIndicador`, `Ranking` en **FutureVest**  
+
+---
+
 ## Proyectos incluidos (en crecimiento)
 
 - **ArtemisBanking** – Plataforma bancaria digital (conceptual)
@@ -57,16 +102,21 @@ Estructura esperada por proyecto:
 - **LinkUp** – Red social académica
 - **eVote360** – Plataforma de votación electrónica
 
+---
+
 ## Proyectos incluidos
 
 | Proyecto | Descripción | Tecnologías | Ejecutar |
-|---------|-------------|-------------|----------|
-| **PredictorActivos** | Predicción de tendencia de activos (acciones/criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC). | C#, ASP.NET Core MVC (.NET 8), Bootstrap | `dotnet run --project PredictorActivos.Web` |
-| **FutureVest** | Análisis, ranking y simulación de inversión por países basado en indicadores macroeconómicos y scoring ponderado. | C#, ASP.NET Core MVC (.NET 8), EF Core, Bootstrap | `dotnet run --project FutureVest.Web` |
+|----------|-------------|-------------|----------|
+| PredictorActivos | Predicción de tendencia de activos (acciones/criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC). | C#, ASP.NET Core MVC (.NET 8), Bootstrap | `dotnet run --project PredictorActivos.Web` |
+| FutureVest | Análisis, ranking y simulación de inversión por países basado en indicadores macroeconómicos y scoring ponderado. | C#, ASP.NET Core MVC (.NET 8), EF Core, Bootstrap | `dotnet run --project FutureVest.Web` |
+| eVote360 | Plataforma de votación electrónica con gestión de elecciones, partidos, candidaturas y registro de votos, con autenticación y control por roles (Admin). | C#, ASP.NET Core MVC (.NET 8), EF Core, Identity, SQLite, Bootstrap | `dotnet run --project eVote360.Web` |
 
-Abrir:  
-- **[PredictorActivos](./PredictorActivos)**  
+### Abrir proyectos
+
+- **[PredictorActivos](./PredictorActivos)**
 - **[FutureVest](./FutureVest)**
+- **[eVote360](./eVote360)**
 
 > ⚠️ Algunos proyectos se encuentran en desarrollo o en evolución progresiva, lo cual refleja el proceso natural de aprendizaje y mejora continua.
 
@@ -76,26 +126,17 @@ Abrir:
 
 Aunque me desenvuelvo con soltura en múltiples áreas del desarrollo de software, este repositorio **no pretende mostrar perfección**, sino **criterio técnico, base sólida y crecimiento constante**.
 
-Cada proyecto fue desarrollado cumpliendo los requerimientos académicos, pero también cuestionando:
-- ¿Cómo se haría esto en un entorno profesional?
-- ¿Qué mejoraría la mantenibilidad?
-- ¿Qué aportaría valor real al usuario o al negocio?
-
-Esa reflexión está documentada dentro de cada proyecto.
-
 ---
 
 ## Tecnologías y herramientas frecuentes
 
-- Visual Studio Code
-- C#, .NET / ASP.NET Core
-- Java / Java Swing
-- Python
-- SQL / SQLite / MySQL
-- HTML, CSS, JavaScript
-- Git & GitHub
-
-*(Las tecnologías específicas se detallan en el README de cada proyecto)*
+- Visual Studio Code  
+- C#, .NET / ASP.NET Core  
+- Java / Java Swing  
+- Python  
+- SQL / SQLite / MySQL  
+- HTML, CSS, JavaScript  
+- Git & GitHub  
 
 ---
 
