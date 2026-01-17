@@ -1,3 +1,5 @@
+# Proyectos-ITLA
+
 Repositorio central de **proyectos académicos y prácticos** desarrollados durante la carrera de **Desarrollo de Software** en el  
 **Instituto Tecnológico de las Américas (ITLA)**.
 
@@ -9,7 +11,7 @@ El objetivo de este repositorio es **demostrar la evolución real de mis compete
 
 ## Objetivos del repositorio
 
-- Centralizar los proyectos asignados en **distintas materias** del ITLA.
+- Centralizar los proyectos asignados en **distintas materias** del ITLA.  
 - Aplicar de forma práctica conceptos de:
   - Programación orientada a objetos
   - Arquitecturas por capas
@@ -41,10 +43,138 @@ Estructura esperada por proyecto:
 
 - Instrucciones claras **1-2-3** para ejecutar el proyecto en VS Code  
 
-- **Aporte personal**  
-  - Qué aprendí desarrollando el proyecto  
-  - Qué decisión técnica fue clave  
-  - Qué funcionalidad innovadora o creativa hubiese agregado para sobresalir aún más  
+---
+
+# Arquitectura global del monorepo
+
+## Visión general
+
+Este repositorio sigue un enfoque de **monorepo académico-profesional**, donde cada proyecto es **independiente en ejecución**, pero todos comparten una **filosofía común de diseño, arquitectura y calidad técnica**.
+
+El objetivo no es solo mostrar soluciones funcionales, sino demostrar:
+
+- Criterio estructural  
+- Separación de responsabilidades  
+- Escalabilidad conceptual  
+- Estilo de trabajo alineado con entornos reales de desarrollo de software  
+
+Cada proyecto se comporta como si fuera un **repositorio productivo autónomo**, pero vive dentro de un ecosistema central que refleja evolución técnica progresiva.
+
+---
+
+## Principios de diseño aplicados
+
+### 1) Separación por capas
+
+Los sistemas se organizan evitando la dependencia directa entre:
+
+- **Presentación (UI / Web / Consola)**  
+- **Lógica de negocio / Application**  
+- **Acceso a datos / Infrastructure**  
+- **Dominio del problema / Domain**  
+
+Esto permite:
+- Cambiar la interfaz sin afectar la lógica  
+- Sustituir la base de datos sin reescribir reglas de negocio  
+- Testear componentes de forma aislada  
+
+---
+
+### 2) Dominio como núcleo del sistema
+
+El modelo de dominio representa el **lenguaje del problema**, no solo estructuras de base de datos.
+
+Ejemplos reales del repositorio:
+- `Candidatura`, `Eleccion`, `Voto` en **eVote360**  
+- `Pais`, `MacroIndicador`, `Ranking` en **FutureVest**  
+
+Estas entidades:
+- Definen reglas conceptuales del sistema  
+- Son independientes del framework web o la base de datos  
+- Pueden reutilizarse en APIs, servicios o microservicios futuros  
+
+---
+
+### 3) Dependencias dirigidas hacia adentro (Clean Architecture)
+
+```text
+Web / UI
+  ↓
+Application / Business
+  ↓
+Domain
+
+La infraestructura y la persistencia dependen del dominio, nunca al revés.
+
+Esto permite:
+	•	Escalar de SQLite a SQL Server / PostgreSQL o APIs externas
+	•	Cambiar MVC por Web API o Frontend SPA
+	•	Mantener el modelo central intacto
+
+---
+
+Estructura lógica común
+
+Aunque cada proyecto tiene su propia organización, la mayoría sigue esta forma general:
+
+ProyectoX/
+│
+├── ProyectoX.Domain
+│   ├── Entities
+│   ├── Interfaces
+│   └── Reglas base del dominio
+│
+├── ProyectoX.Application / Business
+│   ├── Servicios
+│   ├── Casos de uso
+│   └── Validaciones
+│
+├── ProyectoX.Infrastructure / Data
+│   ├── DbContext
+│   ├── Repositorios
+│   ├── Migraciones
+│   └── Seeders
+│
+├── ProyectoX.Web / UI
+│   ├── Controllers
+│   ├── ViewModels / DTOs
+│   ├── Views / Frontend
+│   └── Configuración / Seguridad
+│
+└── README.md
+
+---
+
+Patrones utilizados con frecuencia
+	•	Repository Pattern
+	•	Service Layer
+	•	DTO / ViewModel
+	•	Inyección de dependencias
+
+Flujo conceptual típico:
+
+Controller
+   ↓
+Servicio de aplicación
+   ↓
+Repositorio / EF Core
+   ↓
+Base de datos
+
+Esto reduce:
+	•	Acoplamiento
+	•	Código duplicado
+	•	Lógica en la capa de presentación
+
+---
+
+Seguridad y control de acceso
+
+En proyectos que lo requieren (por ejemplo, eVote360):
+	•	Autenticación con ASP.NET Identity
+	•	Control por roles (ej. Admin)
+	•	Protección de rutas críticas
+	•	Separación entre usuarios públicos y administrativos
 
 ---
 
@@ -52,21 +182,21 @@ Estructura esperada por proyecto:
 
 - **ArtemisBanking** – Plataforma bancaria digital (conceptual)
 - **RealEstateApp** – Sistema de gestión inmobiliaria
-- **HorizonFutureVest** – Análisis y ranking de inversión por países
+- **FutureVest** – Análisis y ranking de inversión por países
 - **PredictorActivos** – Predicción de tendencias financieras (acciones y criptomonedas)
 - **LinkUp** – Red social académica
 - **eVote360** – Plataforma de votación electrónica
-
-## Proyectos incluidos
 
 | Proyecto | Descripción | Tecnologías | Ejecutar |
 |---------|-------------|-------------|----------|
 | **PredictorActivos** | Predicción de tendencia de activos (acciones/criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC). | C#, ASP.NET Core MVC (.NET 8), Bootstrap | `dotnet run --project PredictorActivos.Web` |
 | **FutureVest** | Análisis, ranking y simulación de inversión por países basado en indicadores macroeconómicos y scoring ponderado. | C#, ASP.NET Core MVC (.NET 8), EF Core, Bootstrap | `dotnet run --project FutureVest.Web` |
+| **eVote360** | Plataforma de votación electrónica con gestión de elecciones, partidos, candidaturas y registro de votos, incluyendo autenticación y control por roles (Admin). | C#, ASP.NET Core MVC (.NET 8), EF Core, Bootstrap | `dotnet run --project FutureVest.Web --launch-profile "https"` |
 
 Abrir:  
 - **[PredictorActivos](./PredictorActivos)**  
 - **[FutureVest](./FutureVest)**
+- **[eVote360](./eVote360)**
 
 > ⚠️ Algunos proyectos se encuentran en desarrollo o en evolución progresiva, lo cual refleja el proceso natural de aprendizaje y mejora continua.
 
