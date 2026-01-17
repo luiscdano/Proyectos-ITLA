@@ -217,6 +217,8 @@ Proyectos incluidos (en crecimiento)
 
 Proyectos incluidos
 
+## Proyectos incluidos
+
 | Proyecto | Descripción | Tecnologías | Ejecutar |
 |---------|-------------|-------------|----------|
 | **PredictorActivos** | Predicción de tendencia de activos (acciones/criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC). | C#, ASP.NET Core MVC (.NET 8), Bootstrap | `dotnet run --project PredictorActivos.Web` |
