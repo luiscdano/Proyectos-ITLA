@@ -1,0 +1,30 @@
+@model eVote360.Domain.Entities.PartidoPolitico
+
+@{
+    ViewData["Title"] = "Detalles del Partido";
+}
+
+<h2 class="mb-3">Detalles del Partido</h2>
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row mb-0">
+            <dt class="col-sm-3">Nombre</dt>
+            <dd class="col-sm-9">@Model.Nombre</dd>
+
+            <dt class="col-sm-3">Siglas</dt>
+            <dd class="col-sm-9">@Model.Siglas</dd>
+
+            <dt class="col-sm-3">Descripción</dt>
+            <dd class="col-sm-9">@(!string.IsNullOrWhiteSpace(Model.Descripcion) ? Model.Descripcion : "—")</dd>
+
+            <dt class="col-sm-3">Activo</dt>
+            <dd class="col-sm-9">@((Model.IsActive) ? "Sí" : "No")</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="mt-3 d-flex gap-2">
+    <a class="btn btn-outline-secondary" asp-action="Index">Volver</a>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+</div>

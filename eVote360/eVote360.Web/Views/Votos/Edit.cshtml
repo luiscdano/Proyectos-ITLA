@@ -1,0 +1,65 @@
+@model eVote360.Web.ViewModels.VotoFormVM
+@{
+    ViewData["Title"] = "Editar Voto";
+}
+
+<h1 class="display-6 fw-bold">Editar Voto</h1>
+<p class="text-muted">
+    Actualiza la candidatura/elección/puesto de un voto. El token es opcional.
+</p>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+
+        <form asp-action="Edit" method="post">
+            @Html.AntiForgeryToken()
+
+            <input type="hidden" asp-for="Id" />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            @* FechaHora (solo lectura) *@
+            @if (Model.FechaHora.HasValue)
+            {
+                <div class="mb-3">
+                    <label class="form-label">Fecha/Hora</label>
+                    <input class="form-control" value="@Model.FechaHora.Value.ToString("yyyy-MM-dd HH:mm")" readonly />
+                </div>
+            }
+
+            <div class="mb-3">
+                <label asp-for="EleccionId" class="form-label"></label>
+                <select asp-for="EleccionId" asp-items="Model.Elecciones" class="form-select"></select>
+                <span asp-validation-for="EleccionId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="PuestoElectivoId" class="form-label"></label>
+                <select asp-for="PuestoElectivoId" asp-items="Model.Puestos" class="form-select"></select>
+                <span asp-validation-for="PuestoElectivoId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="CandidaturaId" class="form-label"></label>
+                <select asp-for="CandidaturaId" asp-items="Model.Candidaturas" class="form-select"></select>
+                <span asp-validation-for="CandidaturaId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="TokenVoto" class="form-label"></label>
+                <input asp-for="TokenVoto" class="form-control" placeholder="(opcional) token del voto" />
+                <span asp-validation-for="TokenVoto" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

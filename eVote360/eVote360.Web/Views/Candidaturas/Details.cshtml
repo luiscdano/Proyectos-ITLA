@@ -1,0 +1,39 @@
+@model eVote360.Domain.Entities.Candidatura
+
+@{
+    ViewData["Title"] = "Detalle Candidatura";
+}
+
+<h2 class="mb-3">@ViewData["Title"]</h2>
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row mb-0">
+            <dt class="col-sm-3">Nombre</dt>
+            <dd class="col-sm-9">@Model?.NombreCompleto</dd>
+
+            <dt class="col-sm-3">Boleta</dt>
+            <dd class="col-sm-9">@((Model?.NombreBoleta ?? "-"))</dd>
+
+            <dt class="col-sm-3">Elección</dt>
+            <dd class="col-sm-9">@((Model?.Eleccion?.Tipo ?? "—"))</dd>
+
+            <dt class="col-sm-3">Fecha elección</dt>
+            <dd class="col-sm-9">@((Model?.Eleccion?.Fecha.ToString("dd/MM/yyyy") ?? "—"))</dd>
+
+            <dt class="col-sm-3">Puesto</dt>
+            <dd class="col-sm-9">@((Model?.PuestoElectivo?.Nombre ?? "—"))</dd>
+
+            <dt class="col-sm-3">Partido</dt>
+            <dd class="col-sm-9">@((Model?.PartidoPolitico?.Nombre ?? "—"))</dd>
+
+            <dt class="col-sm-3">Activo</dt>
+            <dd class="col-sm-9">@((Model?.IsActive == true) ? "Sí" : "No")</dd>
+        </dl>
+    </div>
+
+    <div class="card-footer d-flex gap-2">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Editar</a>
+        <a asp-action="Index" class="btn btn-outline-secondary">Volver</a>
+    </div>
+</div>

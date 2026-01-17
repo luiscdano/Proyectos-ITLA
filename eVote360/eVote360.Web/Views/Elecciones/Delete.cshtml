@@ -1,0 +1,32 @@
+@model eVote360.Domain.Entities.Eleccion
+
+@{
+    ViewData["Title"] = "Eliminar Elección";
+}
+
+<h1>Eliminar Elección</h1>
+<hr />
+
+<div class="alert alert-warning">
+    ¿Seguro que deseas eliminar esta elección? Esta acción puede afectar candidaturas y votos relacionados.
+</div>
+
+<dl class="row">
+    <dt class="col-sm-3">ID</dt>
+    <dd class="col-sm-9">@Model.Id</dd>
+
+    <dt class="col-sm-3">Año</dt>
+    <dd class="col-sm-9">@Model.Anio</dd>
+
+    <dt class="col-sm-3">Tipo</dt>
+    <dd class="col-sm-9">@Model.Tipo</dd>
+
+    <dt class="col-sm-3">Fecha</dt>
+    <dd class="col-sm-9">@Model.Fecha.ToString("yyyy-MM-dd")</dd>
+</dl>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

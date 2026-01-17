@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - eVote360</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/eVote360.Web.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2"
+               asp-area="" asp-controller="Home" asp-action="Index">
+                <span class="text-primary">eVote</span><span class="text-dark">360</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- IZQUIERDA -->
+                <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1 mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                    </li>
+
+                    @* ===== Enlaces de Catálogos (solo Admin) ===== *@
+                    @if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="PartidosPoliticos" asp-action="Index">Partidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="PuestosElectivos" asp-action="Index">Puestos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Elecciones" asp-action="Index">Elecciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Candidaturas" asp-action="Index">Candidaturas</a>
+                        </li>
+                    }
+
+                    @* ===== Votos (autenticados) ===== *@
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Votos" asp-action="Index">Votos</a>
+                        </li>
+                    }
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
+                    </li>
+                </ul>
+
+                <!-- DERECHA -->
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <li class="nav-item">
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <span class="badge bg-dark">Admin</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Votante</span>
+                            }
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center"
+                               href="#"
+                               id="userDropdown"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <span class="me-2">@User.Identity?.Name</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li>
+                                    <span class="dropdown-item-text text-muted small">
+                                        Sesión iniciada
+                                    </span>
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <form asp-controller="Account" asp-action="Logout" method="post" class="px-3">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-outline-danger btn-sm w-100">
+                                            Cerrar sesión
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary btn-sm"
+                               asp-controller="Account" asp-action="Login">
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary btn-sm"
+                               asp-controller="Account" asp-action="Register">
+                                Registro
+                            </a>
+                        </li>
+                    }
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-4">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted mt-5">
+    <div class="container py-3 d-flex justify-content-between flex-wrap gap-2">
+        <span>&copy; 2026 - eVote360</span>
+        <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-decoration-none">Privacidad</a>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

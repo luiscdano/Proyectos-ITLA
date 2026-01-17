@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Privacidad";
+}
+
+<div class="mb-4">
+    <h1 class="fw-bold">Política de Privacidad</h1>
+    <p class="text-muted mb-0">
+        En eVote360 tomamos en serio la privacidad, la integridad de la información y la trazabilidad del proceso electoral.
+    </p>
+</div>
+
+<div class="row g-3">
+    <div class="col-12 col-lg-8">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">1) Propósito del sistema</h5>
+                <p class="card-text">
+                    eVote360 es un sistema web académico con enfoque profesional diseñado para simular la gestión
+                    de elecciones, catálogos electorales y un flujo de votación digital controlado.
+                </p>
+
+                <h5 class="card-title mt-4">2) Datos que se manejan</h5>
+                <ul class="mb-0">
+                    <li><strong>Usuarios:</strong> credenciales gestionadas con ASP.NET Identity.</li>
+                    <li><strong>Catálogos:</strong> partidos, elecciones, puestos y candidaturas.</li>
+                    <li><strong>Votos:</strong> registro de voto asociado a candidatura/elección/puesto y fecha-hora.</li>
+                    <li><strong>Token de voto:</strong> puede usarse para validación de unicidad o auditoría interna (según reglas del sistema).</li>
+                </ul>
+
+                <h5 class="card-title mt-4">3) Principios de privacidad</h5>
+                <ul class="mb-0">
+                    <li><strong>Minimización:</strong> solo se guarda lo necesario para la operación del sistema.</li>
+                    <li><strong>Control de acceso:</strong> rol Admin para catálogos; usuarios autenticados para votación.</li>
+                    <li><strong>Trazabilidad:</strong> cada voto registra fecha y relación con la candidatura seleccionada.</li>
+                    <li><strong>Portabilidad:</strong> se utiliza SQLite para mantener el proyecto transportable en entorno académico.</li>
+                </ul>
+
+                <h5 class="card-title mt-4">4) Uso académico</h5>
+                <p class="card-text mb-0">
+                    Este proyecto se utiliza con fines educativos y demostrativos. No representa un sistema oficial.
+                    En un entorno real se implementarían medidas adicionales como cifrado, auditorías, logging seguro,
+                    monitoreo, y controles avanzados contra fraude.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Seguridad</h5>
+                <p class="text-muted small mb-2">Controles implementados</p>
+                <ul class="mb-0">
+                    <li>Autenticación con Identity</li>
+                    <li>Roles (Admin / User)</li>
+                    <li>Cookies con expiración y sliding expiration</li>
+                    <li>Restricción por acceso a módulos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Contacto</h5>
+                <p class="mb-0">
+                    Autor: <strong>Luis Emilio Cedano Martínez</strong><br />
+                    Proyecto: <strong>eVote360</strong><br />
+                    Repositorio: <strong>Proyectos-ITLA/eVote360</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

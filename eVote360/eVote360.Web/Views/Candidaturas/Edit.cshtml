@@ -1,0 +1,59 @@
+@model eVote360.Domain.Entities.Candidatura
+@{
+    ViewData["Title"] = "Editar Candidatura";
+}
+
+<h1>Editar Candidatura</h1>
+<hr />
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="EleccionId" class="form-label">Elección</label>
+        <select asp-for="EleccionId" class="form-select" asp-items="ViewBag.EleccionId"></select>
+        <span asp-validation-for="EleccionId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PuestoElectivoId" class="form-label">Puesto Electivo</label>
+        <select asp-for="PuestoElectivoId" class="form-select" asp-items="ViewBag.PuestoElectivoId"></select>
+        <span asp-validation-for="PuestoElectivoId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PartidoPoliticoId" class="form-label">Partido</label>
+        <select asp-for="PartidoPoliticoId" class="form-select" asp-items="ViewBag.PartidoPoliticoId"></select>
+        <span asp-validation-for="PartidoPoliticoId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NombreCompleto" class="form-label">Nombre Completo</label>
+        <input asp-for="NombreCompleto" class="form-control" />
+        <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NombreBoleta" class="form-label">Nombre en Boleta (opcional)</label>
+        <input asp-for="NombreBoleta" class="form-control" />
+        <span asp-validation-for="NombreBoleta" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="FotoPath" class="form-label">FotoPath (opcional)</label>
+        <input asp-for="FotoPath" class="form-control" />
+        <span asp-validation-for="FotoPath" class="text-danger"></span>
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="IsActive" class="form-check-input" />
+        <label asp-for="IsActive" class="form-check-label">Activo</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

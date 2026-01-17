@@ -1,0 +1,30 @@
+@model eVote360.Domain.Entities.PuestoElectivo
+
+@{
+    ViewData["Title"] = "Eliminar Puesto Electivo";
+}
+
+<h2>Eliminar Puesto Electivo</h2>
+<hr />
+
+<div class="alert alert-warning">
+    ¿Estás seguro que deseas eliminar este puesto? Esta acción no se puede deshacer.
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <p><strong>ID:</strong> @Model.Id</p>
+        <p><strong>Nombre:</strong> @Model.Nombre</p>
+        <p><strong>Descripción:</strong> @(string.IsNullOrWhiteSpace(Model.Descripcion) ? "-" : Model.Descripcion)</p>
+        <p><strong>Activo:</strong> @(Model.IsActive ? "Sí" : "No")</p>
+    </div>
+</div>
+
+<form asp-action="Delete" method="post" class="mt-3">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </div>
+</form>

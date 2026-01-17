@@ -1,0 +1,25 @@
+@model eVote360.Domain.Entities.PartidoPolitico
+
+@{
+    ViewData["Title"] = "Eliminar Partido";
+}
+
+<h2 class="mb-3 text-danger">Eliminar Partido</h2>
+
+<div class="alert alert-warning">
+    ¿Seguro que deseas eliminar este partido? Esta acción no se puede deshacer.
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <p class="mb-1"><strong>Nombre:</strong> @Model.Nombre</p>
+        <p class="mb-1"><strong>Siglas:</strong> @Model.Siglas</p>
+        <p class="mb-0"><strong>Activo:</strong> @((Model.IsActive) ? "Sí" : "No")</p>
+    </div>
+</div>
+
+<form asp-action="Delete" method="post" class="d-flex gap-2">
+    <input type="hidden" asp-for="Id" />
+    <button class="btn btn-danger" type="submit">Sí, eliminar</button>
+    <a class="btn btn-outline-secondary" asp-action="Index">Cancelar</a>
+</form>

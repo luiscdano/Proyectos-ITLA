@@ -1,0 +1,74 @@
+@model eVote360.Web.ViewModels.CandidaturaFormVM
+@{
+    ViewData["Title"] = "Crear Candidatura";
+}
+
+<h1>Crear Candidatura</h1>
+<hr />
+
+@if (!ViewData.ModelState.IsValid && ViewData.ModelState.ErrorCount > 0)
+{
+    <div class="alert alert-warning">
+        Revisa los campos. Si aparece el mensaje de duplicado, cambia Elección / Puesto / Partido.
+    </div>
+}
+
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label asp-for="EleccionId" class="form-label"></label>
+        <select asp-for="EleccionId" class="form-select" asp-items="Model.Elecciones">
+            <option value="">-- Seleccione una elección --</option>
+        </select>
+        <span asp-validation-for="EleccionId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PuestoElectivoId" class="form-label"></label>
+        <select asp-for="PuestoElectivoId" class="form-select" asp-items="Model.Puestos">
+            <option value="">-- Seleccione un puesto --</option>
+        </select>
+        <span asp-validation-for="PuestoElectivoId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PartidoPoliticoId" class="form-label"></label>
+        <select asp-for="PartidoPoliticoId" class="form-select" asp-items="Model.Partidos">
+            <option value="">-- Seleccione un partido --</option>
+        </select>
+        <span asp-validation-for="PartidoPoliticoId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NombreCompleto" class="form-label"></label>
+        <input asp-for="NombreCompleto" class="form-control" />
+        <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NombreBoleta" class="form-label"></label>
+        <input asp-for="NombreBoleta" class="form-control" />
+        <span asp-validation-for="NombreBoleta" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="FotoPath" class="form-label"></label>
+        <input asp-for="FotoPath" class="form-control" />
+        <span asp-validation-for="FotoPath" class="text-danger"></span>
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="IsActive" class="form-check-input" />
+        <label asp-for="IsActive" class="form-check-label"></label>
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

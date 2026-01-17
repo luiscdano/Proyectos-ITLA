@@ -1,0 +1,43 @@
+@model eVote360.Domain.Entities.PartidoPolitico
+
+@{
+    ViewData["Title"] = "Crear Partido";
+}
+
+<h2 class="mb-3">Crear Partido</h2>
+
+<form asp-action="Create" method="post" class="card">
+    <div class="card-body">
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input asp-for="Nombre" class="form-control" placeholder="Ej: Partido Revolucionario Moderno" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Siglas</label>
+            <input asp-for="Siglas" class="form-control" placeholder="Ej: PRM" />
+            <span asp-validation-for="Siglas" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Descripción</label>
+            <textarea asp-for="Descripcion" class="form-control" rows="3" placeholder="Breve descripción..."></textarea>
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" asp-for="IsActive" />
+            <label class="form-check-label">Activo</label>
+        </div>
+    </div>
+
+    <div class="card-footer d-flex gap-2">
+        <button class="btn btn-primary" type="submit">Guardar</button>
+        <a class="btn btn-outline-secondary" asp-action="Index">Cancelar</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

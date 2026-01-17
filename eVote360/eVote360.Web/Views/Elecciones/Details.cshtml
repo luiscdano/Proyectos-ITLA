@@ -1,0 +1,37 @@
+@model eVote360.Domain.Entities.Eleccion
+
+@{
+    ViewData["Title"] = "Detalle Elección";
+}
+
+<h1>Detalle Elección</h1>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-3">ID</dt>
+    <dd class="col-sm-9">@Model.Id</dd>
+
+    <dt class="col-sm-3">Año</dt>
+    <dd class="col-sm-9">@Model.Anio</dd>
+
+    <dt class="col-sm-3">Tipo</dt>
+    <dd class="col-sm-9">@Model.Tipo</dd>
+
+    <dt class="col-sm-3">Fecha</dt>
+    <dd class="col-sm-9">@Model.Fecha.ToString("yyyy-MM-dd")</dd>
+
+    <dt class="col-sm-3">Activo</dt>
+    <dd class="col-sm-9">
+        @if (Model.IsActive)
+        {
+            <span class="badge bg-success">Sí</span>
+        }
+        else
+        {
+            <span class="badge bg-secondary">No</span>
+        }
+    </dd>
+</dl>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-primary">Editar</a>
+<a asp-action="Index" class="btn btn-secondary">Volver</a>
