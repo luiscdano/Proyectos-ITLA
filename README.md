@@ -1,3 +1,5 @@
+# Proyectos-ITLA
+
 Repositorio central de **proyectos académicos y prácticos** desarrollados durante la carrera de **Desarrollo de Software** en el  
 **Instituto Tecnológico de las Américas (ITLA)**.
 
@@ -7,7 +9,7 @@ El objetivo de este repositorio es **demostrar la evolución real de mis compete
 
 ---
 
-## Objetivos del Repositorio
+## Objetivos del repositorio
 
 - Centralizar los proyectos asignados en **distintas materias** del ITLA.  
 - Aplicar de forma práctica conceptos de:
@@ -48,7 +50,7 @@ Estructura esperada por proyecto:
 
 ---
 
-# Arquitectura Global del Monorepo
+# Arquitectura global del monorepo
 
 ## Visión general
 
@@ -67,7 +69,7 @@ Cada proyecto se comporta como si fuera un **repositorio productivo autónomo**,
 
 ## Principios de diseño aplicados
 
-### 1. Separación por capas
+### 1) Separación por capas
 
 Los sistemas se organizan evitando la dependencia directa entre:
 
@@ -83,7 +85,7 @@ Esto permite:
 
 ---
 
-### 2. Dominio como núcleo del sistema
+### 2) Dominio como núcleo del sistema
 
 El modelo de dominio representa el **lenguaje del problema**, no solo estructuras de base de datos.
 
@@ -92,15 +94,13 @@ Ejemplos reales del repositorio:
 - `Pais`, `MacroIndicador`, `Ranking` en **FutureVest**  
 
 Estas entidades:
-- Definen las reglas conceptuales del sistema  
+- Definen reglas conceptuales del sistema  
 - Son independientes del framework web o la base de datos  
-- Pueden ser reutilizadas en APIs, servicios o microservicios futuros  
+- Pueden reutilizarse en APIs, servicios o microservicios futuros  
 
 ---
 
-### 3. Dependencias dirigidas hacia adentro
-
-Inspirado en principios de **Clean Architecture**:
+### 3) Dependencias dirigidas hacia adentro (Clean Architecture)
 
 ```text
 Web / UI
@@ -112,7 +112,7 @@ Domain
 La infraestructura y la persistencia dependen del dominio, nunca al revés.
 
 Esto permite:
-	•	Escalar de SQLite a SQL Server, PostgreSQL o APIs externas
+	•	Escalar de SQLite a SQL Server / PostgreSQL o APIs externas
 	•	Cambiar MVC por Web API o Frontend SPA
 	•	Mantener el modelo central intacto
 
@@ -127,7 +127,7 @@ ProyectoX/
 ├── ProyectoX.Domain
 │   ├── Entities
 │   ├── Interfaces
-│   └── Reglas de negocio base
+│   └── Reglas base del dominio
 │
 ├── ProyectoX.Application / Business
 │   ├── Servicios
@@ -144,23 +144,19 @@ ProyectoX/
 │   ├── Controllers
 │   ├── ViewModels / DTOs
 │   ├── Views / Frontend
-│   └── Configuración de seguridad
+│   └── Configuración / Seguridad
 │
 └── README.md
 
-Esto permite que cualquier proyecto nuevo que se agregue al monorepo herede una base estructural clara y coherente.
-
 ⸻
 
-Patrón de servicios y repositorios
-
-Se aplican patrones como:
+Patrones utilizados con frecuencia
 	•	Repository Pattern
 	•	Service Layer
 	•	DTO / ViewModel
 	•	Inyección de dependencias
 
-Flujo conceptual:
+Flujo conceptual típico:
 
 Controller
    ↓
@@ -179,29 +175,11 @@ Esto reduce:
 
 Seguridad y control de acceso
 
-En proyectos que lo requieren (como eVote360):
+En proyectos que lo requieren (por ejemplo, eVote360):
 	•	Autenticación con ASP.NET Identity
 	•	Control por roles (ej. Admin)
 	•	Protección de rutas críticas
 	•	Separación entre usuarios públicos y administrativos
-
-Esto refleja un enfoque realista de:
-	•	Sistemas institucionales
-	•	Plataformas gubernamentales
-	•	Aplicaciones empresariales
-
-⸻
-
-Evolución técnica del repositorio
-
-Este monorepo refleja un progreso real de complejidad y criterio técnico:
-
-Fundamentos → Arquitectura → Patrones → Seguridad → Escalabilidad → Simulación → Dominio real
-
-Ejemplo:
-	•	Proyectos iniciales: validaciones, lógica estructurada, MVC
-	•	Proyectos intermedios: separación por capas, modelos matemáticos, simulaciones
-	•	Proyectos avanzados: identidad, roles, dominio institucional, diseño extensible
 
 ⸻
 
@@ -217,15 +195,10 @@ Proyectos incluidos (en crecimiento)
 
 Proyectos incluidos
 
-## Proyectos incluidos
-
-## Proyectos incluidos
-
-| Proyecto | Descripción | Tecnologías | Ejecutar |
-|---------|-------------|-------------|----------|
-| **[PredictorActivos](./PredictorActivos)** | Predicción de tendencia de activos (acciones/criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC). | C#, ASP.NET Core MVC (.NET 8), Bootstrap | `dotnet run --project PredictorActivos.Web` |
-| **[FutureVest](./FutureVest)** | Análisis, ranking y simulación de inversión por países basado en indicadores macroeconómicos y scoring ponderado. | C#, ASP.NET Core MVC (.NET 8), EF Core, Bootstrap | `dotnet run --project FutureVest.Web` |
-| **[eVote360](./eVote360)** | Plataforma de votación electrónica con gestión de elecciones, partidos, candidaturas y registro de votos, incluyendo autenticación y control por roles (Admin). | C#, ASP.NET Core MVC (.NET 8), EF Core, Identity, SQLite, Bootstrap | `dotnet run --project eVote360.Web` |
+Proyecto	Descripción	Tecnologías	Ejecutar
+PredictorActivos￼	Predicción de tendencia de activos (acciones y criptomonedas) usando SMA, Regresión Lineal y Momentum (ROC).	C#, ASP.NET Core MVC (.NET 8), Bootstrap	dotnet run --project PredictorActivos.Web
+FutureVest￼	Análisis, ranking y simulación de inversión por países basado en indicadores macroeconómicos y scoring ponderado.	C#, ASP.NET Core MVC (.NET 8), EF Core, Bootstrap	dotnet run --project FutureVest.Web
+eVote360￼	Plataforma de votación electrónica con gestión de elecciones, partidos, candidaturas y registro de votos, con autenticación y control por roles (Admin).	C#, ASP.NET Core MVC (.NET 8), EF Core, Identity, SQLite, Bootstrap	dotnet run --project eVote360.Web
 
 ⚠️ Algunos proyectos se encuentran en desarrollo o en evolución progresiva, lo cual refleja el proceso natural de aprendizaje y mejora continua.
 
@@ -253,7 +226,7 @@ Tecnologías y herramientas frecuentes
 	•	HTML, CSS, JavaScript
 	•	Git & GitHub
 
-(Las tecnologías específicas se detallan en el README de cada proyecto)
+(Las tecnologías específicas se detallan en el README de cada proyecto.)
 
 ⸻
 
@@ -266,6 +239,3 @@ Mi intención es que quien lo revise pueda entender cómo trabajo, cómo estruct
 
 Autor: Luis Emilio Cedano Martínez
 Tecnólogo en Desarrollo de Software – ITLA
-
----
-
