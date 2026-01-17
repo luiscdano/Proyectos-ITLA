@@ -91,6 +91,54 @@ Ejemplos reales del repositorio:
 - `Candidatura`, `Eleccion`, `Voto` en **eVote360**  
 - `Pais`, `MacroIndicador`, `Ranking` en **FutureVest**  
 
+Estas entidades:
+- Definen reglas conceptuales del sistema  
+- Son independientes del framework web o la base de datos  
+- Pueden reutilizarse en APIs, servicios o microservicios futuros  
+
+---
+
+### 3) Dependencias dirigidas hacia adentro (Clean Architecture)
+
+```text
+Web / UI
+  ↓
+Application / Business
+  ↓
+Domain
+
+La infraestructura y la persistencia dependen del dominio, nunca al revés.
+
+---
+## Estructura lógica común
+Aunque cada proyecto tiene su propia organización, en su mayoría sigue esta forma general.
+
+ProyectoX/
+│
+├── ProyectoX.Domain
+│   ├── Entities
+│   ├── Interfaces
+│   └── Reglas base del dominio
+│
+├── ProyectoX.Application / Business
+│   ├── Servicios
+│   ├── Casos de uso
+│   └── Validaciones
+│
+├── ProyectoX.Infrastructure / Data
+│   ├── DbContext
+│   ├── Repositorios
+│   ├── Migraciones
+│   └── Seeders
+│
+├── ProyectoX.Web / UI
+│   ├── Controllers
+│   ├── ViewModels / DTOs
+│   ├── Views / Frontend
+│   └── Configuración / Seguridad
+│
+└── README.md
+
 ---
 
 ## Proyectos incluidos (en crecimiento)
@@ -102,9 +150,6 @@ Ejemplos reales del repositorio:
 - **LinkUp** – Red social académica
 - **eVote360** – Plataforma de votación electrónica
 
----
-
-## Proyectos incluidos
 
 | Proyecto | Descripción | Tecnologías | Ejecutar |
 |----------|-------------|-------------|----------|
@@ -125,6 +170,13 @@ Ejemplos reales del repositorio:
 ## Enfoque personal
 
 Aunque me desenvuelvo con soltura en múltiples áreas del desarrollo de software, este repositorio **no pretende mostrar perfección**, sino **criterio técnico, base sólida y crecimiento constante**.
+
+Cada proyecto fue desarrollado cumpliendo los requerimientos académicos, pero también cuestionando:
+- ¿Cómo se haría esto en un entorno profesional?
+- ¿Qué mejoraría la mantenibilidad?
+- ¿Qué aportaría valor real al usuario o al negocio?
+
+Esa reflexión está documentada dentro de cada proyecto.
 
 ---
 
